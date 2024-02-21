@@ -61,4 +61,4 @@ Como parte do desafio final da Trilha de CSS, Eu procurei reproduzir com o máxi
 
 <h2 id="demo">🚀 Meu Projeto  Final</h2>
 
-Você pode acessar ao resultado final do projeto [clicando aqui](https://micheleambrosio.github.io/hbomax/).
+Você pode acessar ao resultado final do projeto [clicando aqui](https://luizfcs35.github.io/HBOMax/).
