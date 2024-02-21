@@ -1,0 +1,92 @@
+@import url("/assets/css/index.css");
+
+
+/* Medias Query max-Width */
+
+@media screen and (max-width: 1200px) {
+  
+  .subscription__plans {
+    gap: 40px;
+  } 
+
+  .contents__container {
+    gap: 32px;
+  }
+
+}
+
+
+@media screen and (max-width: 1024px) {
+  
+  .subscription__plans {
+    flex-direction: column;
+    align-items: center;
+  }
+  .subscription__card {
+    max-width: 600px;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+
+  .contents__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+   /* Conteudo de Rotação */
+
+.subscription__plans:has(.subscription__card:nth-child(1):hover)
+.subscription__card:nth-child(2){
+  transform: rotateX(45deg);
+}
+
+.subscription__plans:has(.subscription__card:nth-child(2):hover)
+.subscription__card:nth-child(1){
+transform: rotateX(-45deg);
+}
+ 
+}
+
+@media screen and (max-width: 480px) {
+
+  .menu {
+    padding: 32px 24px;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .menu__logo-img {
+    max-width: 100px;
+  }
+
+  .menu__item--button {
+    margin: 0;
+  }
+
+  .header {
+    margin-top: 128px !important;
+  }
+
+  .footer__link {
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  .subscription__plans {
+    align-items: center;
+  }
+
+  .subscription__card {
+    padding: 40px;
+  }
+
+  .contents__container {
+    grid-template-columns: repeat(6, 100%);
+    grid-auto-flow: column;
+    overflow: auto hidden;
+  }
+
+}
+
+
