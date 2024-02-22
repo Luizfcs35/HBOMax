@@ -1,9 +1,8 @@
 @import url("/assets/css/global.css");
 
-
 /* Medias Query max-Width */
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1940px) {
   
   .subscription__plans {
     gap: 40px;
@@ -14,7 +13,6 @@
   }
 
 }
-
 
 @media screen and (max-width: 1024px) {
   
@@ -31,21 +29,9 @@
 @media screen and (max-width: 768px) {
 
   .contents__container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr) !important;
+    
   }
-
-   /* Conteudo de Rotação */
-
-.subscription__plans:has(.subscription__card:nth-child(1):hover)
-.subscription__card:nth-child(2){
-  transform: rotateX(45deg);
-}
-
-.subscription__plans:has(.subscription__card:nth-child(2):hover)
-.subscription__card:nth-child(1){
-transform: rotateX(-45deg);
-}
- 
 }
 
 @media screen and (max-width: 480px) {
@@ -65,7 +51,27 @@ transform: rotateX(-45deg);
   }
 
   .header {
-    margin-top: 128px !important;
+    margin-top: 100px !important;
+  }
+
+  /* Conteudo de Rotação */
+
+  .subscription__plans:has(.subscription__card:nth-child(1):hover)
+    .subscription__card:nth-child(2) {
+      transform: rotateX(45deg) !important;
+  }
+
+  .subscription__plans:has(.subscription__card:nth-child(2):hover)
+    .subscription__card:nth-child(1) {
+      transform: rotateX(-45deg) !important;
+  }
+
+  .contents {
+    margin: 0 auto;
+  }
+
+  section {
+    scroll-margin-top: 40px;
   }
 
   .footer__link {
@@ -82,11 +88,11 @@ transform: rotateX(-45deg);
   }
 
   .contents__container {
-    grid-template-columns: repeat(6, 100%);
+    grid-template-columns: repeat(6, 100%) !important;
     grid-auto-flow: column;
     overflow: auto hidden;
   }
-
+ 
 }
 
 
