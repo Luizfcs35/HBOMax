@@ -16,7 +16,6 @@ body {
   padding: 24px;
   width: 100%;
   height: 70%;
-  
 }
 
 .login {
@@ -53,7 +52,7 @@ body {
 .login__actions {
   margin-top: 24px;
   text-align: left;
-  
+
 }
 
 .login__link {
@@ -64,37 +63,50 @@ body {
 }
 
 .login__field::placeholder {
-color: var(--form-field-placeholder);
+  color: var(--form-field-placeholder);
 }
 
 /* Erros dos inputs */
 
 #email:invalid {
- border-color: var(--form-field-error);
+  border-color: var(--form-field-error);
 }
 
 #password:invalid {
- border-color: var(--form-field-error);
+  border-color: var(--form-field-error);
+}
+
+/*Estilizando a tela no modo paisagem */
+
+@media only screen and (orientation: landscape) {
+
+  .content {
+    height: auto;
+    margin: 100px 0;
+  }
 }
 
 /*Estilizando a tela de login Mobile */
 
 @media screen and (max-width: 480px) {
-  
+
   body {
     height: auto;
   }
 
   .login {
     margin-top: 100px;
+    padding: 20px;
   }
+
   .login__actions .button {
     display: block;
     margin: 0 auto;
+
   }
 
   .login__link {
-    display:flex;
+    display: flex;
     width: 100%;
     margin: 18px auto;
     justify-content: center;

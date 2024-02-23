@@ -1,4 +1,5 @@
 @import url("assets/css/index.css");
+@import url("assets/css/signIn.css");
 
 /* Fonts Importadas */
 
@@ -72,12 +73,13 @@ div {
   letter-spacing: 2px;
   color: var(--text-color);
   text-decoration: none;
-  margin-right: 24px;
+  margin-right: 24px; 
 }
 
 .menu__logo {
   max-width: 160px;
 }
+
 .menu__logo-img {
   width: 100%;
 }
@@ -343,7 +345,7 @@ section {
 }
 
 .contents__image {
-  width: 102%;
+  width: 100%;
   object-position: center;
   object-fit: cover;
   transition: opacity 2s;

@@ -57,6 +57,8 @@ Como parte do desafio final da Trilha de CSS, Eu procurei reproduzir com o máxi
 
 * Eu utilizei a branch `template-desafio`. Onde foi feito um fork do projeto em minha conta [Github](https://github.com/Luizfcs35/HBOMax).
 
+* Fiz algumas estilizações pessoais para que o layout além de ser `mobile first`, funcione também no `orientation landscape: paisagem` pois encontrei alguns erros de design durante os testes mobile.
+
 * O resultado final do projeto deve contemplar todas as [Features](#features) presentes no <a href="https://github.com/Luizfcs35/HBOMax/tree/template-desafio">Resultado Final</a>.
 
 <h2 id="demo">🚀 Meu Projeto  Final</h2>
